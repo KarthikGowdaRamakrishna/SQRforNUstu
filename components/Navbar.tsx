@@ -29,7 +29,7 @@ function NavBar() {
                     <div></div>
                   ) : (
                     <Image
-                      src="/hamburger-menu.svg"
+                      src="./hamburger-menu.svg"
                       width={30}
                       height={30}
                       alt="logo"
