@@ -30,7 +30,7 @@ const Hero = () => {
           </p>
 
           <div className="flex space-x-20">
-            <a href=".SQR/growYourCompany">
+            <a href="/growYourCompany">
               <MagicButton
                 title="Hiring Partner "
                 icon={<FaLocationArrow />}

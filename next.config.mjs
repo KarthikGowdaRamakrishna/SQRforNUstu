@@ -4,7 +4,8 @@ const nextConfig = {
     distDir: 'dist',
     images: {
         unoptimized: true,
-    }
+    },
+    basePath: '/SQR',
 };
 
 export default nextConfig;
