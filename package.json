@@ -4,10 +4,12 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d build",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "deploy": "vercel --prod"
+    "lint": "next lint"
+    
   },
   "dependencies": {
     "@clerk/nextjs": "^6.9.10",
