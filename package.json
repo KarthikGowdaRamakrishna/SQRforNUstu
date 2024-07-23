@@ -1,16 +1,13 @@
 {
-  "homepage":"https://github.com/KarthikGowdaRamakrishna/SQR",
   "name": "SQR",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "predeploy" : "npm run build",
-    "deploy" : "gh-pages -d build",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
-    
+    "lint": "next lint",
+    "deploy": "vercel --prod"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
