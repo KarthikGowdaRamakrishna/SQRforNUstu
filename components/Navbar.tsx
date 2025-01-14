@@ -16,7 +16,7 @@ function NavBar() {
             <div className="flex items-center justify-between py-3 md:py-5 md:block z-20">
               {/* LOGO */}
               <Link href="/">
-                <Image src="./SQRlogo.jpg" alt="logo" width={94} height={49} />
+                <Image src="/SQRlogo.jpg" alt="logo" width={94} height={49} />
 
                 {/* <h2 className="text-2xl text-cyan-600 font-bold ">LOGO</h2> */}
               </Link>
@@ -82,12 +82,11 @@ function NavBar() {
                 {isLoaded && (
                   <>
                     {user ? (
-                      // Show user name and sign out button
                       <>
-                        <li className="pb-6 text-xl text-white py-2 px-6 text-center">
+                        <li className="pb-6 text-xl text-white py-2 px-6 text-center border-b-2 md:border-b-0">
                           Welcome, {user.firstName}!
                         </li>
-                        <li className="pb-6 text-xl text-white py-2 px-6 text-center">
+                        <li className="pb-6 text-xl text-white py-2 px-6 text-center border-b-2 md:border-b-0">
                           <SignOutButton>
                             <button className="bg-purple-600 hover:bg-purple-700 px-4 py-2 rounded-md">
                               Sign Out
@@ -96,7 +95,6 @@ function NavBar() {
                         </li>
                       </>
                     ) : (
-                      // Show sign in/up buttons
                       <>
                         <li className="pb-6 text-xl py-2 px-6 text-center md:border-b-0">
                           <Link

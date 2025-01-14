@@ -10,15 +10,15 @@
     "deploy": "vercel --prod"
   },
   "dependencies": {
+    "@clerk/nextjs": "^6.9.10",
     "@emailjs/browser": "^4.4.1",
     "@react-three/drei": "^9.105.4",
     "@react-three/fiber": "^8.16.2",
-    "@sentry/nextjs": "^7.105.0",
     "@tabler/icons-react": "^3.1.0",
     "@types/three": "^0.163.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
-    "framer-motion": "^11.3.2",
+    "framer-motion": "^11.17.0",
     "lottie-react": "^2.4.0",
     "lucide-react": "^0.365.0",
     "mini-svg-data-uri": "^1.4.4",
@@ -45,5 +45,11 @@
     "postcss": "^8",
     "tailwindcss": "^3.3.0",
     "typescript": "^5"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "config": {
+    "engine-strict": false
   }
 }
