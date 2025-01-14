@@ -62,7 +62,7 @@ export const gridItems = [
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
     titleClassName: "justify-center md:justify-start lg:justify-center",
     img: "",
-    spareImg: "./grid.svg",
+    spareImg: "/grid.svg",
     columns: [
       {
         title: "2M NETWORKS ",
@@ -163,32 +163,32 @@ export const companies = [
   {
     id: 1,
     name: "cloudinary",
-    img: "./cloud.svg",
-    nameImg: "./cloudName.svg",
+    img: "/cloud.svg",
+    nameImg: "/cloudName.svg",
   },
   {
     id: 2,
     name: "appwrite",
-    img: "./app.svg",
-    nameImg: "./appName.svg",
+    img: "/app.svg",
+    nameImg: "/appName.svg",
   },
   {
     id: 3,
     name: "HOSTINGER",
-    img: "./host.svg",
-    nameImg: "./hostName.svg",
+    img: "/host.svg",
+    nameImg: "/hostName.svg",
   },
   {
     id: 4,
     name: "stream",
-    img: "./s.svg",
-    nameImg: "./streamName.svg",
+    img: "/s.svg",
+    nameImg: "/streamName.svg",
   },
   {
     id: 5,
     name: "docker.",
-    img: "./dock.svg",
-    nameImg: "./dockerName.svg",
+    img: "/dock.svg",
+    nameImg: "/dockerName.svg",
   },
 ];
 
@@ -198,7 +198,7 @@ export const Services = [
     title: "SQUARETOP",
     desc: "Custom Proposal all create a personalized proposal outlining the best approach for your requirements.",
     className: "md:col-span-2",
-    thumbnail: "./exp1.svg",
+    thumbnail: "/exp1.svg",
     link: "https://squarecircle.group/",
   },
   {
@@ -206,7 +206,7 @@ export const Services = [
     title: "RADARLIST",
     desc: "RADAR database of 1.5M+ candidates has access to a network of over 20k Recruiters and Hiring Manager for 1100 companies.",
     className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "./exp2.svg",
+    thumbnail: "/exp2.svg",
     link: "https://theradarlist.com/",
   },
   {
@@ -214,7 +214,7 @@ export const Services = [
     title: "SQUARECIRCLE",
     desc: "sqr circle for recruitment, Strong professional network spanned across industries.",
     className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "./exp3.svg",
+    thumbnail: "/exp3.svg",
     link: "https://squarecircle.group/",
   },
   {
@@ -222,7 +222,7 @@ export const Services = [
     title: "RECRUITERS OUTREACH",
     desc: "20K RECRUITERS Reach among top recruiters and hiring managers.",
     className: "md:col-span-2",
-    thumbnail: "./exp4.svg",
+    thumbnail: "/exp4.svg",
     link: "https://squarecircle.group/",
   },
 ];
@@ -234,12 +234,12 @@ export const socialMedia = [
   // },
   {
     id: 2,
-    img: "./twit.svg",
+    img: "/twit.svg",
     href: "https://x.com/markbjobs",
   },
   {
     id: 3,
-    img: "./link.svg",
+    img: "/link.svg",
     href: "https://www.linkedin.com/company/squareresults/posts/?feedView=all",
   },
 ];
