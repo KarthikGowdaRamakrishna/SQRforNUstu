@@ -16,7 +16,7 @@ function NavBar() {
             <div className="flex items-center justify-between py-3 md:py-5 md:block z-20">
               {/* LOGO */}
               <Link href="/">
-                <Image src="/SQRlogo.jpg" alt="logo" width={94} height={49} />
+                <Image src="./SQRlogo.jpg" alt="logo" width={94} height={49} />
 
                 {/* <h2 className="text-2xl text-cyan-600 font-bold ">LOGO</h2> */}
               </Link>
