@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import { useUser, SignOutButton } from "@clerk/nextjs";
+import { useUser, SignOutButton, UserButton } from "@clerk/nextjs";
 
 function NavBar() {
   const { user, isLoaded } = useUser();
@@ -83,16 +83,16 @@ function NavBar() {
                   <>
                     {user ? (
                       <>
-                        <li className="pb-6 text-xl text-white py-2 px-6 text-center border-b-2 md:border-b-0">
-                          Welcome, {user.firstName}!
+                        <li className="pb-6 text-xl text-white py-3 px-6 text-center border-b-2 md:border-b-0">
+                          <UserButton afterSignOutUrl="/" />
                         </li>
-                        <li className="pb-6 text-xl text-white py-2 px-6 text-center border-b-2 md:border-b-0">
+                        {/* <li className="pb-6 text-xl text-white py-2 px-6 text-center border-b-2 md:border-b-0">
                           <SignOutButton>
                             <button className="bg-purple-600 hover:bg-purple-700 px-4 py-2 rounded-md">
                               Sign Out
                             </button>
                           </SignOutButton>
-                        </li>
+                        </li> */}
                       </>
                     ) : (
                       <>
