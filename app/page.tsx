@@ -1,6 +1,6 @@
 "use client";
 
-import { usePathname } from "next/navigation";
+import { redirect, usePathname } from "next/navigation";
 import { useEffect } from "react";
 import { navItems } from "@/data";
 
@@ -13,8 +13,11 @@ import ServicesSec from "@/components/ServicesSec";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
 import { LampDemo } from "@/components/ui/lamp";
 import Articles from "@/components/Articles";
+import { useUser } from "@clerk/nextjs";
 
 const Home = () => {
+  const { user, isLoaded } = useUser();
+  const profileInfo = null;
   const pathname = usePathname();
 
   useEffect(() => {
@@ -29,6 +32,9 @@ const Home = () => {
       window.removeEventListener("hashchange", handleHashChange);
     };
   }, [pathname]);
+
+  if (user && !profileInfo) redirect("/onboarding");
+
 
   return (
     <main className="relative bg-slate-950 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
