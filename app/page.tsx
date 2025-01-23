@@ -17,7 +17,7 @@ import { useUser } from "@clerk/nextjs";
 
 const Home = () => {
   const { user, isLoaded } = useUser();
-  const profileInfo = null;
+  const profileInfo = user?.unsafeMetadata;
   const pathname = usePathname();
 
   useEffect(() => {
@@ -32,8 +32,10 @@ const Home = () => {
       window.removeEventListener("hashchange", handleHashChange);
     };
   }, [pathname]);
+  
 
-  if (user && !profileInfo) redirect("/onboarding");
+  if (user && profileInfo && Object.keys(profileInfo).length === 0) redirect("/onboarding");
+  console.log("User Profile Info:", profileInfo);
 
 
   return (

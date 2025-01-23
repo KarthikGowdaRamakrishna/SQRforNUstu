@@ -1,3 +1,40 @@
 # visit site : https://karthikgowdaramakrishna.github.io/SQR/
 
  I have used Next.js for scalability in terms of its SEO benefits and implemented a CI/CD workflow using GitHub Actions to automate the deployment process with every new commit.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+DATABASE_URL="postgresql://neondb_owner:npg_M7BqAwGhyR9H@ep-shy-smoke-a4g7fsdq.us-east-1.aws.neon.tech/neondb?sslmode=require"
